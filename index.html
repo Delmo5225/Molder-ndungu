@@ -4,13 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
+    <style>
+        .container{
+            display: flex;
+            border:1.5px solid black;
+            padding:18px;
+            margin: 30px;
+            
+        }
+        
+        
+    </style>
 </head>
 <body>
    <header> <h1>User Registration Form</h1></header>
     <br>
 
-    <form action="/Molder-ndungu/submit.html">
-    <legend>Personal Information</legend>
+    <form action="/Molder-ndungu/submit.html" class="container">
+   <div class="flex-item">
+        <legend>Personal Information</legend>
     <br>
         <label for="/Molder-ndungu/First Name.html">First Name:</label>
             <input type="text" id="First Name" placeholder="Eurobeat">
@@ -35,10 +47,13 @@
                             <br>
                     <label for="/Molder-Ndungu/photo.html">Profile Photo:</label>
                     <input type="image"id="Profile Photo">
+    </div>
+    </form>
+        
+    <form action="/Molder-ndungu/submit.html" class="container">
+    <div class="flex-item">
+        <legend >Contact & Address Information</legend>
         <br>
-        <br><br>
-     <legend>Contact & Address Information</legend>
-     <br>
         <label for="Email">Email Address:</label>
         <input type="email" id="Email Address" placeholder="hallondavis@example.com">
             <br>
@@ -62,8 +77,12 @@
             <br>
         <label for="Time">Preffered Contact Time:</label>
             <input type="time" id="Preffered Contact Time" >
-            <br><br><br>
-    <legend>Preferences & Interests</legend>
+    </div>
+    </form>
+           
+    <form action="/Molder-ndungu/submit.html" class="container">
+    <div class="flex-item">
+    <legend >Preferences & Interests</legend>
     <br>
         <label for="Fav Color">Favourite Color:</label>
             <input type="color" id="Favourite Color" placeholder="color:red">
@@ -79,7 +98,10 @@
             <br>
         <label for="Search Keywords">Search Keywords:</label>
             <input type="search" id="Search Keywords" placeholder="Enter Keywords">
-                <br><br><br>
+            
+   
+               
+        
         <label for="Interests">Interests(Select all that apply):</label>
         <label for="Technology">Technology</label>
             <input type="checkbox" id="Technology">
@@ -107,8 +129,14 @@
             <br>
         <label for="Confirm Password">Confirm Password:</label>
         <input type="password" id="Confirm Password">
-            <br>
-    <legend>Feedback & Additional Information</legend>
+         </div>
+    </form>
+        
+    
+            
+    <form action="/Molder-ndungu/submit.html" class="container">
+    <div class="flex-item">
+    <legend >Feedback & Additional Information</legend>
     <br>
         <label for="text">Tell us about yourself</label>
             <textarea>Write a brief description about yourself ...</textarea>
@@ -129,17 +157,13 @@
             <br>
         <label for="agree">I agree to the Privacy Policy</label>
             <input type="checkbox" id="I agree to the Privacy Policy">
-            <br><br><br>
-        <button>Register</button><button>Clear Form</button>
-
-
-
-
-
-        
-
-
+   
+    </div>
     </form>
+            
+        <button style="justify-content: center;">Register</button><button style="justify-content: center;">Clear Form</button>
+
+</form>
     
 </body>
 </html>
